@@ -16,15 +16,37 @@ get_header(); ?>
 
 		<div id="container" class="one-column">
 			<div id="content" role="main">
-				<div class="one-third module">
-					<?php include('inc/modules/menu/menu.php') ?>
-				</div>
-				<div class="two-third module">
-					<?php include('inc/modules/aboutus/aboutus.php') ?>
-				</div>
-				<div class="three-third module"></div>
+					<div class="one-third module">
+						<?php include('inc/modules/menu/menu.php') ?>
+					</div>
+					<div class="two-third module">
+						<?php include('inc/modules/aboutus/aboutus.php') ?>
+					</div>
+<!-- 					<div class="three-third module"></div> -->
+					<div class="one-third module">
+						<?php include('inc/modules/feedback/feedback.php') ?>
+					</div>
+					<div class="one-third module">
+						<?php include('inc/modules/chownow/chownow.php') ?>
+					</div>
+					<div class="one-third module">
+						<?php include('inc/modules/menu/menu.php') ?>
+					</div>
 			</div><!-- #content -->
 		</div><!-- #container -->
+		
+		<script>
 
+			jQuery( document ).ready(function() {
+				
+			  jQuery('#content').isotope({
+			    itemSelector: '.module',
+			    layoutMode: 'masonry',
+					
+			  });
+			  
+			});
+		</script>
+		
 <?php// get_sidebar(); ?>
 <?php get_footer(); ?>

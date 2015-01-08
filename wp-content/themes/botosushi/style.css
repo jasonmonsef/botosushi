@@ -53,8 +53,7 @@ code{font-family:Monaco,Consolas,"Andale Mono","DejaVu Sans Mono",monospace}
 #wrapper {
   background: none repeat scroll 0 0 #fff;
   margin: 20px auto 0;
-  max-width: 1025px;
-  padding: 0 20px;
+  max-width: 1020px;
 }
 #footer-widget-area{overflow:hidden}
 #footer-widget-area .widget-area{float:left;margin-right:20px;width:220px}
@@ -101,20 +100,17 @@ a:active,a:hover{color:#ff4b33}
 
 #header {
   background: url("images/bg-header.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  padding-bottom: 9px;
 }
 .hero-banner > img {
   display: block;
   height: auto;
   width: 100%;
 }
-#site-title{float:left;font-size:30px;line-height:36px;margin:0 0 18px;width:700px}
-#site-title a{color:#000;font-weight:700;text-decoration:none}
-#site-description{clear:right;float:right;font-style:italic;margin:15px 0 18px;width:220px}
-#branding img{border-top:4px solid #000;border-bottom:1px solid #000;display:block;float:left}
-
-/* =Menu
--------------------------------------------------------------- */
-#header ul {text-align: center;}
+#header ul {
+  margin: 0;
+  text-align: center;
+}
 #header li {
   display: inline-block;
 }
@@ -129,6 +125,14 @@ a:active,a:hover{color:#ff4b33}
   padding: 0 4%;
   vertical-align: middle;
 }
+#site-title{float:left;font-size:30px;line-height:36px;margin:0 0 18px;width:700px}
+#site-title a{color:#000;font-weight:700;text-decoration:none}
+#site-description{clear:right;float:right;font-style:italic;margin:15px 0 18px;width:220px}
+#branding img{border-top:4px solid #000;border-bottom:1px solid #000;display:block;float:left}
+
+/* =Menu
+-------------------------------------------------------------- */
+
 #access{background:#000;display:block;float:left;margin:0 auto;width:940px}
 #access .menu-header,div.menu{font-size:13px;margin-left:12px;width:928px}
 #access .menu-header ul,div.menu ul{list-style:none;margin:0}
@@ -148,7 +152,7 @@ a:active,a:hover{color:#ff4b33}
 
 #main {
   clear: both;
-  overflow: hidden;
+/*   overflow: hidden; */
 }
 #content,#content input,#content textarea{color:#333;font-size:16px;line-height:24px}
 #content p,#content ul,#content ol,#content dd,#content pre,#content hr{margin-bottom:24px}
@@ -365,9 +369,19 @@ code{-webkit-text-size-adjust:160%}
   display: block;
   float: left;
 }
-.one-third {width: 33.333333%;}
-.two-third {width: 66.666666%;}
-.three-third {width: 100%;}
+/*
+.module:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+*/
+.module .inner {float: left;background: transparent none;}
+.one-third {width: 340px;}
+.two-third {width: 680px;}
+.three-third {width: 1020px;}
+
+.module-inner {width: 33.33333% !important;float: left;}
 
 /* =Menu Module
 -------------------------------------------------------------- */
@@ -389,8 +403,50 @@ code{-webkit-text-size-adjust:160%}
 
 /* =About Us Module
 -------------------------------------------------------------- */
-#aboutus {background: url(images/be-aboutus.jpg) no-repeat}
+#aboutus {
+  background: url("images/be-aboutus.jpg") no-repeat scroll 0 0 / cover  rgba(0, 0, 0, 0);
+  padding: 20px;
+}
+.module #aboutus {height: 250px;}
+#aboutus > h2 {
+  font-weight: 100;
+}
+#aboutus h3 {
+  color: #a11407;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#aboutus span {
+  display: inline-block;
+  font-size: 31px;
+  padding: 0 3px;
+}
+#aboutus p {
+  font-size: 14px;
+}
 
+/* =Feedback Module
+-------------------------------------------------------------- */
+#feedback {	
+	background: url(images/bg-feedback.jpg) no-repeat;
+	background-size: cover;
+	padding: 20px;
+}
+.module #feedback {height: 500px;}
+#feedback h2,#feedback p {text-align: center;}
+#feedback > p {
+  font-size: 20px;
+  padding: 0 25px;
+}
+
+/* =Chow Now Module
+-------------------------------------------------------------- */
+#chownow {	
+	background: url(images/bg-chownow.jpg) no-repeat;
+	background-size: cover;
+	padding: 20px;
+}
+.module #chownow {height: 250px;}
 
 
 

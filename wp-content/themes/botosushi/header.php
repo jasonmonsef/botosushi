@@ -26,26 +26,16 @@
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic' rel='stylesheet' type='text/css'>
-<script src="<?php bloginfo('template_url') ?>/js/isotope.js"></script>
 
 <?php
 	if ( is_singular() && get_option( 'thread_comments' ) )
 		wp_enqueue_script( 'comment-reply' );
 	wp_head();
 ?>
-<script>
-	jQuery( function() {
-  
-  jQuery('.isotope').isotope({
-    layoutMode: 'packery',
-    itemSelector: '.item',
-    packery: {
-      isHorizontal: true
-    }
-  });
-  
-});
-</script>
+<script type='text/javascript' src="<?php bloginfo('template_url') ?>/js/isotope.js"></script>
+<script type='text/javascript' src="<?php bloginfo('template_url') ?>/js/isotope-masonry-horizontal.js
+"></script>
+
 </head>
 
 <body <?php body_class(); ?>>
