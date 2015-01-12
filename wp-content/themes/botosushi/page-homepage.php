@@ -22,7 +22,6 @@ get_header(); ?>
 					<div class="two-third module">
 						<?php include('inc/modules/aboutus/aboutus.php') ?>
 					</div>
-<!-- 					<div class="three-third module"></div> -->
 					<div class="one-third module">
 						<?php include('inc/modules/feedback/feedback.php') ?>
 					</div>
@@ -30,7 +29,25 @@ get_header(); ?>
 						<?php include('inc/modules/chownow/chownow.php') ?>
 					</div>
 					<div class="one-third module">
-						<?php include('inc/modules/menu/menu.php') ?>
+						<?php include('inc/modules/happyhour/happyhour.php') ?>
+					</div>
+					<div class="one-third module">
+						<?php include('inc/modules/specialdeal/specialdeal.php') ?>
+					</div>
+					<div class="one-third module">
+						<?php include('inc/modules/customer-reviews/customer-reviews.php') ?>
+					</div>
+					<div class="one-third module">
+						<?php include('inc/modules/private-events/private-events.php') ?>
+					</div>
+					<div class="one-third module">
+						<?php include('inc/modules/eclub/eclub.php') ?>
+					</div>
+					<div class="two-third module">
+						<?php include('inc/modules/meetchef/meetchef.php') ?>
+					</div>
+					<div class="one-third module">
+						<?php include('inc/modules/catering/catering.php') ?>
 					</div>
 			</div><!-- #content -->
 		</div><!-- #container -->

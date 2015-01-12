@@ -1,5 +1,5 @@
 <div id="feedback">
-	<h2><span>[</span>GIVE US <strong>FEEDBACK</strong><span>]</span></h2>
+	<h2><span class="lrg-bracket">[</span>GIVE US <strong>FEEDBACK</strong><span class="lrg-bracket">]</span></h2>
 	<p><img src="<?php bloginfo('template_url') ?>/images/logo-lrg.png"/></p>
 	<p>
 		Click on the stars below to rate your experience with Boto Sushi.

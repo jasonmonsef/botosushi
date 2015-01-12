@@ -90,7 +90,7 @@ sup{bottom:1ex}
 sub{top:.5ex}
 small{font-size:smaller}
 input[type="text"],input[type="password"],input[type="email"],input[type="url"],input[type="number"],textarea{background:#f9f9f9;border:1px solid #ccc;box-shadow:inset 1px 1px 1px rgba(0,0,0,0.1);-moz-box-shadow:inset 1px 1px 1px rgba(0,0,0,0.1);-webkit-box-shadow:inset 1px 1px 1px rgba(0,0,0,0.1);padding:2px}
-a:link{color:#06c}
+a:link{color:#06c;text-decoration: none;}
 a:visited{color:#743399}
 a:active,a:hover{color:#ff4b33}
 .screen-reader-text{position:absolute;left:-9000px}
@@ -378,11 +378,30 @@ code{-webkit-text-size-adjust:160%}
 */
 .module .inner {float: left;background: transparent none;}
 .one-third {width: 340px;}
-.two-third {width: 680px;}
-.three-third {width: 1020px;}
+.two-third {max-width: 680px;}
+.three-third {max-width: 1020px;}
+.one-fourth {width: 160px !important}
 
-.module-inner {width: 33.33333% !important;float: left;}
-
+.module-inner {float: left;}
+.one-third.module-inner {width: 213px}
+.one-fourth.module-inner {
+  text-align: center;
+  width: 160px;
+}
+.lrg-bracket {
+	display: inline-block;
+	font-size: 31px;
+	padding: 0 3px;
+}
+.module h2 {
+  font-size: 26px;
+  font-weight: 100;
+}
+.inner-vertically-aligned {
+	position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
 /* =Menu Module
 -------------------------------------------------------------- */
 
@@ -404,7 +423,7 @@ code{-webkit-text-size-adjust:160%}
 /* =About Us Module
 -------------------------------------------------------------- */
 #aboutus {
-  background: url("images/be-aboutus.jpg") no-repeat scroll 0 0 / cover  rgba(0, 0, 0, 0);
+  background: url("images/bg-aboutus.jpg") no-repeat scroll 0 0 / cover  rgba(0, 0, 0, 0);
   padding: 20px;
 }
 .module #aboutus {height: 250px;}
@@ -447,14 +466,204 @@ code{-webkit-text-size-adjust:160%}
 	padding: 20px;
 }
 .module #chownow {height: 250px;}
+#chownow > p {
+  text-align: center;
+}
+.chownow-inner {
+	  position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#chownow h2 {color: #fff}
+#chownow a {
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+#chownow a img {margin-bottom: 1px}
 
+/* =Happy Hour Module
+-------------------------------------------------------------- */
+#happyhour {	
+	background: url(images/bg-happyhour.jpg) no-repeat;
+	background-size: cover;
+	padding: 20px;
+	text-align: center;
+	color: #fff
+}
+.module #happyhour {height: 250px;}
+#happyhour h2 {color: #fff}
+#happyhour .inner-vertically-aligned {
+  padding: 0 15%;
+}
+
+/* =Special Deal Module
+-------------------------------------------------------------- */
+
+#specialdeal{	
+	background: url(images/bg-specialdeals.jpg) no-repeat;
+	background-size: cover;
+	padding: 20px;
+	text-align: center;
+	color: #fff
+}
+.module #specialdeal {height: 250px;}
+#specialdeal h2 {color: #fff}
+#specialdeal .inner-vertically-aligned {
+  padding: 0 15%;
+}
+
+/* =Customer Reviews Module
+-------------------------------------------------------------- */
+#customer_reviews{	
+	background: url(images/bg-customer-reviews.jpg) no-repeat;
+	background-size: cover;
+	padding: 20px;	
+}
+.module #customer_reviews {height: 500px;}
+.user_profile_image {float: left;width: 30%}
+#customer_reviews > p {
+  float: left;
+  font-size: 15px;
+  font-style: oblique;
+  line-height: 20px;
+  width: 70%;
+}
+.user_profile_image > img {
+  border: 3px solid #91d4ee;
+  border-radius: 50%;
+}
+/* #customer_reviews p {float: left;} */
+
+/* =Private Events Module
+-------------------------------------------------------------- */
+
+#private_events{	
+	background: url(images/bg-private-events.jpg) no-repeat;
+	background-size: cover;
+	padding: 20px;
+	color: #fff
+}
+.module #private_events {height: 250px;}
+#specialdeal h2 {color: #fff}
+#specialdeal .inner-vertically-aligned {
+  padding: 0 15%;
+}
+#private_events > h2 {
+  color: #fff;
+}
+.bottom-infobox {
+  bottom: 15px;
+  float: right;
+  position: absolute;
+  text-align: right;
+}
+#private_events .left {
+  border-right: 1px solid #fff;
+  float: left;
+  padding-right: 4%;
+  width: 97%;
+}
+#private_events .right {
+  float: right;
+  width: 9%;
+}
+.bottom-infobox .right > img {
+  position: absolute;
+  top: 52px;
+}
+#private_events a {color: #fff}
+
+
+/* =Private Events Module
+-------------------------------------------------------------- */
+#eclub {	
+	background: url(images/bg-eclub.png) no-repeat;
+	background-size: cover;
+	padding: 20px;
+	color: #fff;
+	text-align: center;
+}
+.module #eclub {height: 250px;}
+#eclub h2 {color: #fff}
+#eclub h2 span {color: #05455e}
+#eclub .inner-vertically-aligned {
+  padding: 0 15%;
+}
+#eclub a {
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+#chownow a img {margin-bottom: 1px}
+
+/* =Meet the Chefs Module
+-------------------------------------------------------------- */
+#meetchef {
+  background: url("images/bg-meetchef.jpg") no-repeat scroll 0 0 / cover  rgba(0, 0, 0, 0);
+  padding: 20px;
+}
+.module #meetchef {height: 250px;}
+#meetchef > h2 {
+  font-weight: 100;
+}
+#meetchef img {
+  border: 3px solid #91d4ee;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+#meetchef .meta {
+  color: #000;
+  font-weight: bold;
+  line-height: 15px;
+}
+#meetchef .meta a {color: #a11407}
+
+/* =Private Events Module
+-------------------------------------------------------------- */
+
+#catering{	
+	background: url(images/bg-catering.jpg) no-repeat;
+	background-size: cover;
+	padding: 20px;
+	color: #fff
+}
+.module #catering {height: 250px;}
+#catering h2 {color: #fff}
+
+#catering > h2 {
+  color: #fff;
+}
+#catering .left {
+  border-right: 1px solid #fff;
+  float: left;
+  padding-right: 4%;
+  width: 88%;
+}
+#catering .right {
+  float: right;
+  width: 9%;
+}
+#catering .right > img {
+  position: absolute;
+  right: 9px;
+  top: 52px;
+}
+#catering a {color: #fff}
 
 
 /* =Print Style
 -------------------------------------------------------------- */
 	
 @media print {
-	body{background:none!important}
+body{background:none!important}
 #wrapper{clear:both!important;display:block!important;float:none!important;position:relative!important}
 #header{border-bottom:2pt solid #000;padding-bottom:18pt}
 #colophon{border-top:2pt solid #000}

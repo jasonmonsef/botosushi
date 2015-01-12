@@ -1,5 +1,5 @@
 <div id="aboutus">
-	<h2><span>[</span>ABOUT <strong>US</strong><span>]</span></h2>
+	<h2><span class="lrg-bracket">[</span>ABOUT <strong>US</strong><span class="lrg-bracket">]</span></h2>
 	<div class="one-third module-inner">
 		<h3>ADDRESS</h3>
 		<p>
