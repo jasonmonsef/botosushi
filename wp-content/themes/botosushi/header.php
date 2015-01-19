@@ -35,6 +35,8 @@
 <script type='text/javascript' src="<?php bloginfo('template_url') ?>/js/isotope.js"></script>
 <script type='text/javascript' src="<?php bloginfo('template_url') ?>/js/isotope-masonry-horizontal.js
 "></script>
+<script type='text/javascript' src="<?php bloginfo('template_url') ?>/js/isotope-pakery.js
+"></script>
 
 </head>
 
@@ -46,7 +48,12 @@
 			<li><a href="">RESERVATIONS</a></li>
 			<li><img src="<?php bloginfo('template_url') ?>/images/logo.png"/></li>
 			<li><a href="">MENU</a></li>
-			<li><a href="">LOCATIONS</a></li>
+			<li>
+				<a href="">LOCATIONS</a>
+				<ul>
+    		  <li>SUSHIYAH - DEL MAR</li>
+    		</ul>
+			</li>
 		</ul>
 	</div><!-- #header -->
 	<div class="hero-banner">

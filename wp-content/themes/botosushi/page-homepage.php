@@ -58,7 +58,7 @@ get_header(); ?>
 				
 			  jQuery('#content').isotope({
 			    itemSelector: '.module',
-			    layoutMode: 'masonry',
+			    layoutMode: 'packery'
 					
 			  });
 			  

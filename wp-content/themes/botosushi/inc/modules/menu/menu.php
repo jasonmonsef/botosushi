@@ -1,3 +1,5 @@
 <div id="menu-box">
-		<h2>SEE OUR<strong> MENU</strong></h2>
+	<div class="menu-inner">
+		<a href="#"><h2>SEE OUR<strong> MENU</strong></h2></a>
+	</div>
 </div>
