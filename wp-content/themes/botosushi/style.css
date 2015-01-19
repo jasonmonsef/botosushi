@@ -90,9 +90,10 @@ sup{bottom:1ex}
 sub{top:.5ex}
 small{font-size:smaller}
 input[type="text"],input[type="password"],input[type="email"],input[type="url"],input[type="number"],textarea{background:#f9f9f9;border:1px solid #ccc;box-shadow:inset 1px 1px 1px rgba(0,0,0,0.1);-moz-box-shadow:inset 1px 1px 1px rgba(0,0,0,0.1);-webkit-box-shadow:inset 1px 1px 1px rgba(0,0,0,0.1);padding:2px}
+a {cursor: pointer;}
 a:link {
   color: #a11407;
-  text-decoration: none;
+  text-decoration: none;cursor: pointer;
 }
 a:visited{color:#743399}
 a:active,a:hover{color:#ff4b33}
@@ -722,6 +723,58 @@ code{-webkit-text-size-adjust:160%}
 }
 #catering a {color: #fff}
 
+/* =Overlay Module
+-------------------------------------------------------------- */
+.switch {display: none;}
+.overlay {
+  background: none repeat scroll 0 0 rgba(156,209,230, 0.95);
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  transition: all 0.5s ease 0s;
+  visibility: hidden;
+  width: 100%;
+  z-index: 400;
+}
+.overlay.open {
+  opacity: 1;
+  transition: all 0.5s ease 0s;
+  visibility: visible;
+  padding-top: 36px;
+}
+.overlay-inner {
+  background: url("images/bg-meetchef.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
+  margin: 0 auto;
+  max-width: 630px;
+  padding: 1% 2% 3%;
+  position: relative;
+  text-align: center;
+}
+
+.overlay-inner h2 {color: #000 !important}
+.trigger-overlay.close {position: absolute; top: 92px; right: 6%;}
+.trigger-overlay.close span {
+  color: #ad1503;
+  display: inline-block;
+  padding-right: 5px;
+  position: relative;
+  text-align: center;
+  top: 42%;
+  transform: translateY(-37%);
+}
+a.menu-link {
+  border: 3px solid #000;
+  border-radius: 5px;
+  color: #000;
+  display: inline-block;
+  font-weight: bold;
+  margin: 0 4px;
+  padding: 5px 10px;
+}
+.overlay-title {margin-bottom: 30px;}
 /* =Responsive Media Query Style
 -------------------------------------------------------------- */
 

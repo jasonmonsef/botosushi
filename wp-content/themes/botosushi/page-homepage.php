@@ -62,6 +62,15 @@ get_header(); ?>
 					
 			  });
 			  
+			  
+			});
+			// open coupon form in modal dialog
+			jQuery(document).on('click', '.trigger-overlay', function () {
+				jQuery('.switch').addClass('overlay').removeClass('switch').show();
+				jQuery('.overlay').toggleClass('open');
+				jQuery('.trigger-overlay.close').show()
+				jQuery('.gform-wrap').removeClass('expand')
+				jQuery('.deals-cta').show()
 			});
 		</script>
 		
