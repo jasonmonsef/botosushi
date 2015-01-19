@@ -11,8 +11,9 @@
 	<div class="one-third module-inner">
 		<h3>HOURS</h3>
 		<p>
-			Mon-Th    11pm-9:30<br>
-			Fri-Sun   11pm-10pm<br>
+			<strong>Mon-Th</strong>    11pm-9:30<br>
+			<strong>Fri-Sat</strong>   11pm-10pm<br>
+			<strong>Sun </strong>      Closed<br>
 			Open Holidays
 		</p>
 	</div>

@@ -19,6 +19,19 @@ License: Private
     clear: both;
     visibility: hidden;
 }
+::-webkit-input-placeholder { /* WebKit browsers */
+    opacity: 1
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    opacity: 1
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    opacity: 1
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    opacity: 1
+}
+
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{background:transparent;border:0;margin:0;padding:0;vertical-align:baseline}
 body{line-height:1}
 h1,h2,h3,h4,h5,h6{clear:both;font-weight:400}
@@ -150,9 +163,9 @@ a:active,a:hover{color:#ff4b33}
 #access li:hover > a,#access ul ul :hover > a{background:#333;color:#fff}
 #access ul li:hover > ul{display:block}
 #access ul li.current_page_item > a,#access ul li.current_page_ancestor > a,#access ul li.current-menu-ancestor > a,#access ul li.current-menu-item > a,#access ul li.current-menu-parent > a{color:#fff}
-* html #access ul li.current_page_item a,* html #access ul li.current_page_ancestor a,* html #access ul li.current-menu-ancestor a,* html #access ul li.current-menu-item a,* html #access ul li.current-menu-parent a,* html #access ul li a:hover{color:#fff}
+#header ul li a:hover{color:#fff}
 
-ul li ul {
+#header ul li ul {
   padding: 0;
   position: absolute;
   top: 40px;
@@ -166,15 +179,15 @@ ul li ul {
   visibility: hidden;
   transition: all 0.3s ease 0s;
 }
-ul li ul li {
+#header ul li ul li {
   background: none repeat scroll 0 0 #000;
   color: #fff;
   display: block !important;
   padding: 10px !important;
   transition: all 0.3s ease 0s;
 }
-ul li ul li:hover { background: #666; transition: all 0.3s ease 0s;}
-ul li:hover ul {
+#header ul li ul li:hover { background: #666; transition: all 0.3s ease 0s;}
+#header ul li:hover ul {
   display: block;
   opacity: 1;
   visibility: visible;
@@ -510,6 +523,100 @@ code{-webkit-text-size-adjust:160%}
   font-size: 20px;
   padding: 0 25px;
 }
+.gform-wrap {height: auto !important;transition: all 0.3s ease 0s;}
+#input_1_4 {display: none}
+#ratingsForm ul#input_1_4 {display: block !important}
+/*
+#feedback .trigger-overlay.close {
+  position: absolute;
+  right: 6%;
+  top: 92px;
+}
+*/
+.form-description {margin-bottom: 30px}
+.reviewbuttons {text-align: center;}
+.reviewbuttons img {
+  margin: 10px;
+}
+
+/* Begin Star Rating CSS */
+	ul.gfield_radio {
+  margin: 0 !important;
+  padding: 0;
+}
+	form .stars li {display: inline-block;float: left;}	
+form .stars {
+  background: url("images/stars3-blue.png") repeat-x scroll 0 -4px rgba(0, 0, 0, 0);
+  margin: 10px auto;
+  width: 260px;
+}
+ 
+form .stars input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+form .stars input[type="radio"].star-5:checked ~ span {
+  width: 100%;
+}
+form .stars input[type="radio"].star-4:checked ~ span {
+  width: 80%;
+}
+form .stars input[type="radio"].star-3:checked ~ span {
+  width: 60%;
+}
+form .stars input[type="radio"].star-2:checked ~ span {
+  width: 40%;
+}
+form .stars input[type="radio"].star-1:checked ~ span {
+  width: 20%;
+}
+form .stars label {
+  display: block;
+  width: 52px;
+  height: 52px;
+  margin: 0!important;
+  padding: 0!important;
+  text-indent: -999em;
+  float: left;
+  position: relative;
+  z-index: 10;
+  background: transparent!important;
+  cursor: pointer;
+}
+form .stars label:hover ~ span {
+  background-position: 0 -52px;
+}
+form .stars label.star-5:hover ~ span {
+  width: 100% !important;
+}
+form .stars label.star-4:hover ~ span {
+  width: 80% !important;
+}
+form .stars label.star-3:hover ~ span {
+  width: 60% !important;
+}
+form .stars label.star-2:hover ~ span {
+  width: 40% !important;
+}
+form .stars label.star-1:hover ~ span {
+  width: 20% !important;
+}
+form .stars span {
+  display: block;
+  width: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 51px;
+  background: url("images/stars3.png") repeat-x 0 -52px;
+  -webkit-transition: -webkit-width 0.5s;
+  -moz-transition: -moz-width 0.5s;
+  -ms-transition: -ms-width 0.5s;
+  -o-transition: -o-width 0.5s;
+  transition: width 0.5s;
+}
+/* END Star Rating CSS */
 
 /* =Chow Now Module
 -------------------------------------------------------------- */
@@ -554,7 +661,13 @@ code{-webkit-text-size-adjust:160%}
 .module #happyhour {height: 250px;}
 #happyhour h2 {color: #fff}
 #happyhour .inner-vertically-aligned {
-  padding: 0 15%;
+/*   padding: 0 15%; */
+}
+#happyhour ul {
+  text-align: left;
+}
+#happyhour li {
+  font-size: 14px;
 }
 
 /* =Special Deal Module
@@ -618,9 +731,10 @@ code{-webkit-text-size-adjust:160%}
 }
 .bottom-infobox {
   bottom: 15px;
-  float: right;
   position: absolute;
+  right: 10px;
   text-align: right;
+  width: 100%;
 }
 #private_events .left {
   border-right: 1px solid #fff;
@@ -635,18 +749,18 @@ code{-webkit-text-size-adjust:160%}
 }
 .bottom-infobox .right > img {
   position: absolute;
-  top: 52px;
+  right: 9px;
+  top: 4px;
 }
 #private_events a {color: #fff}
 
 
-/* =Private Events Module
+/* =E-Club Module
 -------------------------------------------------------------- */
 #eclub {	
 	background: url(images/bg-eclub.png) no-repeat;
 	background-size: cover;
 	padding: 20px;
-	color: #fff;
 	text-align: center;
 }
 .module #eclub {height: 250px;}
@@ -659,7 +773,7 @@ code{-webkit-text-size-adjust:160%}
 #eclub .inner-vertically-aligned {
   padding: 0 15%;
 }
-#eclub a {
+#eclub a.button {
   border: 1px solid #fff;
   color: #fff;
   font-size: 18px;
@@ -679,7 +793,7 @@ code{-webkit-text-size-adjust:160%}
 #meetchef > h2 {
   font-weight: 100;
 }
-#meetchef img {
+#meetchef img.chef-profile {
   border: 3px solid #91d4ee;
   border-radius: 50%;
   margin-bottom: 10px;
@@ -690,6 +804,7 @@ code{-webkit-text-size-adjust:160%}
   line-height: 15px;
 }
 #meetchef .meta a {color: #a11407}
+.chef-bio {text-align: left;}
 
 /* =Private Events Module
 -------------------------------------------------------------- */
@@ -698,7 +813,6 @@ code{-webkit-text-size-adjust:160%}
 	background: url(images/bg-catering.jpg) no-repeat;
 	background-size: cover;
 	padding: 20px;
-	color: #fff
 }
 .module #catering {height: 250px;}
 #catering h2 {color: #fff}
@@ -711,6 +825,7 @@ code{-webkit-text-size-adjust:160%}
   float: left;
   padding-right: 4%;
   width: 88%;
+  color: #fff
 }
 #catering .right {
   float: right;
@@ -747,7 +862,7 @@ code{-webkit-text-size-adjust:160%}
 }
 .overlay-inner {
   background: url("images/bg-meetchef.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
-  margin: 0 auto;
+  margin: 30px auto 0;
   max-width: 630px;
   padding: 1% 2% 3%;
   position: relative;
@@ -755,7 +870,7 @@ code{-webkit-text-size-adjust:160%}
 }
 
 .overlay-inner h2 {color: #000 !important}
-.trigger-overlay.close {position: absolute; top: 92px; right: 6%;}
+.trigger-overlay.close {position: absolute; top: 25px; right: 6%;}
 .trigger-overlay.close span {
   color: #ad1503;
   display: inline-block;
@@ -775,6 +890,26 @@ a.menu-link {
   padding: 5px 10px;
 }
 .overlay-title {margin-bottom: 30px;}
+
+/* =Form Specific Style
+-------------------------------------------------------------- */
+
+.gform_button.button {
+  background: none repeat scroll 0 0 #89c5df;
+  border: medium none;
+  color: #fff !important;
+  display: block;
+  font-size: 23px !important;
+  margin: 0 auto;
+  padding: 8px 10px;
+  text-transform: uppercase;
+}
+
+.ginput_container input {
+  background: none repeat scroll 0 0 #fff;
+  border: 1px solid #65a3b8;
+  color: #65a3b8 !important;
+}
 /* =Responsive Media Query Style
 -------------------------------------------------------------- */
 

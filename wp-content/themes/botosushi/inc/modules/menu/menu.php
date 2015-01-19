@@ -1,6 +1,6 @@
 <div id="menu-box">
 	<div class="menu-inner">
-		<a href="#" class="trigger-overlay"><h2>SEE OUR<strong> MENU</strong></h2></a>
+		<a href="#" class="trigger-overlay menu-overlay"><h2>SEE OUR<strong> MENU</strong></h2></a>
 	</div>
 	
 	<div class="switch">
