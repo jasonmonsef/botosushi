@@ -163,7 +163,7 @@ a:active,a:hover{color:#ff4b33}
 #access li:hover > a,#access ul ul :hover > a{background:#333;color:#fff}
 #access ul li:hover > ul{display:block}
 #access ul li.current_page_item > a,#access ul li.current_page_ancestor > a,#access ul li.current-menu-ancestor > a,#access ul li.current-menu-item > a,#access ul li.current-menu-parent > a{color:#fff}
-#header ul li a:hover{color:#fff}
+/* #header ul li a:hover{color:#fff} */
 
 #header ul li ul {
   padding: 0;
@@ -618,28 +618,30 @@ form .stars span {
 }
 /* END Star Rating CSS */
 
-/* =Chow Now Module
+/* =Fivestar Module
 -------------------------------------------------------------- */
-#chownow {	
-	background: url(images/bg-chownow.jpg) no-repeat;
+#fivestar {	
+	background:#161616;
 	background-size: cover;
 	padding: 20px;
 }
-.module #chownow {height: 250px;}
-#chownow > p {
+.module #fivestar {height: 250px;}
+#fivestar > p {
   text-align: center;
 }
-.chownow-inner {
+.fivestar-inner {
 	  position: relative;
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
 }
-#chownow h2 {color: #fff}
-.chownow-inner > img {
+#fivestar h2 {color: #fff}
+/*
+.fivestar-inner > img {
   margin-bottom: 15px;
 }
-#chownow a {
+*/
+#fivestar a.button {
   border: 1px solid #fff;
   color: #fff;
   font-size: 18px;
@@ -647,8 +649,10 @@ form .stars span {
   padding: 5px 10px;
   text-decoration: none;
 }
-#chownow a img {margin-bottom: 1px}
-
+#fivestar a img {margin-bottom: 1px}
+#fivestar .overlay-inner h2 {
+  color: #fff !important;
+}
 /* =Happy Hour Module
 -------------------------------------------------------------- */
 #happyhour {	
@@ -700,7 +704,7 @@ form .stars span {
 .user_profile_image {float: left;width: 30%}
 #customer_reviews > p {
   float: left;
-  font-size: 15px;
+  font-size: 13px;
   font-style: oblique;
   line-height: 20px;
   width: 70%;
@@ -708,6 +712,10 @@ form .stars span {
 .user_profile_image > img {
   border: 3px solid #91d4ee;
   border-radius: 50%;
+}
+#customer_reviews a.yelp-review img {
+  width: 37px;
+  color: #a11407;
 }
 
 /* #customer_reviews p {float: left;} */
@@ -868,7 +876,15 @@ form .stars span {
   position: relative;
   text-align: center;
 }
-
+#fivestar .overlay-inner {
+  background: none repeat scroll 0 0 #161616;
+  color: #fff;
+  margin: 30px auto 0;
+  max-width: 630px;
+  padding: 1% 2%;
+  position: relative;
+  text-align: center;
+}
 .overlay-inner h2 {color: #000 !important}
 .trigger-overlay.close {position: absolute; top: 25px; right: 6%;}
 .trigger-overlay.close span {
@@ -919,6 +935,15 @@ a.menu-link {
 }
 .two-third {
   width: 100%;
+}
+}
+@media screen and (max-width: 670px) {
+.one-third.module-inner {
+  display: inline-block;
+  float: none;
+  text-align: center;
+  vertical-align: text-top;
+  width: 210px;
 }
 }
 

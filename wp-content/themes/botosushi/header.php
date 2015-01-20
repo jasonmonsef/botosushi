@@ -44,10 +44,10 @@
 <div id="wrapper" class="hfeed">
 	<div id="header">
 		<ul>
-			<li><a href="">CALL US</a></li>
+			<li><a href="tel:8584517800">CALL US</a></li>
 			<li><a href="">RESERVATIONS</a></li>
 			<li><img src="<?php bloginfo('template_url') ?>/images/logo.png"/></li>
-			<li><a href="">MENU</a></li>
+			<li><a href="#" class="trigger-overlay">MENU</a></li>
 			<li>
 				<a href="">LOCATIONS</a>
 				<ul>

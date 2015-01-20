@@ -26,7 +26,7 @@ get_header(); ?>
 						<?php include('inc/modules/feedback/feedback.php') ?>
 					</div>
 					<div class="one-third module">
-						<?php include('inc/modules/chownow/chownow.php') ?>
+						<?php include('inc/modules/fivestar/fivestar.php') ?>
 					</div>
 					<div class="one-third module">
 						<?php include('inc/modules/happyhour/happyhour.php') ?>
@@ -65,7 +65,7 @@ get_header(); ?>
 			  
 			});
 			// open menu in modal dialog
-			jQuery(document).on('click', '#menu-box .trigger-overlay', function () {
+			jQuery(document).on('click', '#menu-box .trigger-overlay, #header .trigger-overlay', function () {
 				jQuery('#menu-box .switch').addClass('overlay').removeClass('switch').show();
 				jQuery('#menu-box .overlay').toggleClass('open');
 				jQuery('#menu-box .trigger-overlay.close').show()
@@ -128,6 +128,14 @@ get_header(); ?>
 				jQuery('#catering .trigger-overlay.close').show()
 				jQuery('#catering .gform-wrap').removeClass('expand')
 				jQuery('#catering .deals-cta').show()
+			});
+			// open FiveStar form in modal dialog
+			jQuery(document).on('click', '#fivestar .trigger-overlay', function () {
+				jQuery('#fivestar .switch').addClass('overlay').removeClass('switch').show();
+				jQuery('#fivestar .overlay').toggleClass('open');
+				jQuery('#fivestar .trigger-overlay.close').show()
+				jQuery('#fivestar .gform-wrap').removeClass('expand')
+				jQuery('#fivestar .deals-cta').show()
 			});
 			
 

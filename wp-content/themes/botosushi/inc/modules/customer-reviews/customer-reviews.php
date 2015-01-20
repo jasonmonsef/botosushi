@@ -5,7 +5,7 @@
 	</div>
 	<p>
 		I can't say enough good things about this new establishment...the sushi is perfectly filled with various flavors that just burst in your mouth with every bite!<br>
-    -Jessica T. <br>
+    -Jessica T. <a class="yelp-review" href="http://www.yelp.com/biz/boto-sushi-san-diego-4?hrid=ZNQL6O1-OEAnRUPcFewaMQ" target="_blank">| read the rest on <img src="<?php bloginfo('template_url') ?>/images/Yelp_Logo_No_Outline_Color-1.jpg"/></a> <br>
 		<img style="margin-top: 10px;" src="<?php bloginfo('template_url') ?>/images/placeholder-stars-5.png"/>
 	</p>
 	<div class="user_profile_image">
@@ -13,16 +13,12 @@
 	</div>
 	<p>
 		Best sushi we have had in San Diego county. The fish melts in your mouth! It's incredibly fresh. Fast, and friendly service.<br>
-		-Sydney N.<br>
+		-Sydney N. <a class="yelp-review" href="http://www.yelp.com/biz/boto-sushi-san-diego-4?hrid=NNe4q8ibBIQhjT9es5zEwg" target="_blank">| read the rest on <img src="<?php bloginfo('template_url') ?>/images/Yelp_Logo_No_Outline_Color-1.jpg"/></a><br>
 		<img style="margin-top: 10px;" src="<?php bloginfo('template_url') ?>/images/placeholder-stars-5.png"/>
 	</p>
 	<div class="hand-pointer">
 		<a href="#" class="trigger-overlay"><img src="<?php bloginfo('template_url') ?>/images/haveacoment.png"/></a>
 	</div>
-	
-	
-	
-	
 	
 	<div class="switch">
 		<div class="overlay-inner">
