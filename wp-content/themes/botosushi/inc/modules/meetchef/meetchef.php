@@ -1,4 +1,4 @@
-<div id="meetchef">
+<div id="meetchef" class="clearfix">
 	<h2><span class="lrg-bracket">[</span>MEET THE <strong>CHEFS</strong><span class="lrg-bracket">]</span></h2>
 <!--
 	<div class="one-fourth module-inner">

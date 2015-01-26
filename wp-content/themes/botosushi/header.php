@@ -41,9 +41,19 @@
 </head>
 
 <body <?php body_class(); ?>>
+	
+	<script>
+		jQuery(document).on('click', '.menu-mobile #nav-toggle', function () {
+			jQuery('.menu-mobile  .switch').addClass('overlay').removeClass('switch').show();
+			jQuery('.menu-mobile  .overlay').toggleClass('open');
+			jQuery('.menu-mobile  .trigger-overlay.close').show()
+			jQuery('.menu-mobile  .gform-wrap').removeClass('expand')
+		});
+	</script>
+	
 <div id="wrapper" class="hfeed">
 	<div id="header">
-		<ul>
+		<ul class="menu-desktop">
 			<li><a href="#" class="trigger-overlay">MENU</a></li>
 			<li>
 				<a href="">LOCATIONS</a>
@@ -54,9 +64,30 @@
 			<li><img src="<?php bloginfo('template_url') ?>/images/logo.png"/></li>
 			<li><a href="tel:8584517800">CALL US</a></li>
 			<li><a href="">RESERVATIONS</a></li>
-			
-			
 		</ul>
+		
+		<ul class="menu-mobile">
+			<img src="<?php bloginfo('template_url') ?>/images/logo.png"/>
+			<a id="nav-toggle" href="#"><span></span></a>
+			<div class="switch">
+				<div class="overlay-inner ">
+					<div id="access" role="navigation" style="display: block ! important; float: none; width: 100%; text-align: center; margin-top: 40%;">
+						<ul>
+							<li><a href="#" class="trigger-overlay">MENU</a></li>
+							<li>
+								<a href="">LOCATIONS</a>
+								<ul>
+								  <li>SUSHIYAH - DEL MAR</li>
+								</ul>
+							</li>
+							<li><a href="tel:8584517800">CALL US</a></li>
+							<li><a href="">RESERVATIONS</a></li>
+						</ul>
+					</div><!-- #access -->
+				</div><!-- .overlay-inner -->
+			</div><!-- .switch -->
+		</ul>
+		
 	</div><!-- #header -->
 	<div class="hero-banner">
 		<img src="<?php bloginfo('template_url') ?>/images/hero-banner.jpg"/>

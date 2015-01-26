@@ -16,7 +16,17 @@
 	</div><!-- #footer -->
 
 </div><!-- #wrapper -->
-
+<div class="switch">
+				<div class="overlay-inner ">
+					<div id="access" role="navigation" style="display: block ! important; float: none; width: 100%; text-align: center; margin-top: 40%;">
+						<ul>
+							<li><a href="<?php bloginfo('url') ?>/portfolio">portfolio</a></li>
+							<li><a href="<?php bloginfo('url') ?>/about">about</a></li>
+							<li><a href="#contact-wrap">contact</a></li>
+						</ul>
+					</div><!-- #access -->
+				</div>
+	</div>
 <?php
 	/*
 	 * Always have wp_footer() just before the closing </body>
