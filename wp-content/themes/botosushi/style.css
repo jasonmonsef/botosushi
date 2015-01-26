@@ -170,6 +170,7 @@ a:active,a:hover{color:#ff4b33}
 #access li:hover > a,#access ul ul :hover > a{background:#333;color:#fff}
 #access ul li:hover > ul{display:block}
 #access ul li.current_page_item > a,#access ul li.current_page_ancestor > a,#access ul li.current-menu-ancestor > a,#access ul li.current-menu-item > a,#access ul li.current-menu-parent > a{color:#fff}
+#access li {display: block;}
 /* #header ul li a:hover{color:#fff} */
 
 #header ul li ul {
