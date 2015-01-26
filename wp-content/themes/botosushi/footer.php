@@ -37,6 +37,11 @@
 	wp_footer();
 ?>
 
+<?php
+
+if(file_exists('livereload.php'))
+    include 'livereload.php';
+?>
 
 
 </body>
