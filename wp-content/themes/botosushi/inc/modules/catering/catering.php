@@ -12,8 +12,8 @@
 		
 		<div class="switch">
 		<div class="overlay-inner">
+		<div class="overlay-title"><a class="trigger-overlay close" style="display: none"><span>Close</span><img width="25px" src="<?php bloginfo('template_url') ?>/images/closex.png"/></a></div>
 		<h2>PREMIER<strong> CATERING</strong></h2>
-			<div class="overlay-title"><a class="trigger-overlay close" style="display: none"><span>Close</span><img width="25px" src="<?php bloginfo('template_url') ?>/images/closex.png"/></a></div>
 			<p>Complete the form below to reservce your date and and have a Boto Sushi Representative give contact you</p>
 			<div  class="gform-wrap" style="height:0px;overflow: hidden;transition: all 0.3s ease 0s;">
 				<?php echo do_shortcode('[gravityform id="3" title="false" description="false" ajax="true"]'); ?>

@@ -50,8 +50,8 @@
 	
 		<div class="switch">
 		<div class="overlay-inner">
+			<div><a class="trigger-overlay close menu-overlay" style="display: none"><span>Close</span><img width="25px" src="<?php bloginfo('template_url') ?>/images/closex.png"/></a></div>
 			<h2><span class="lrg-bracket">[</span>MEET THE <strong>CHEFS</strong><span class="lrg-bracket">]</span></h2>
-			<a class="trigger-overlay close menu-overlay" style="display: none"><span>Close</span><img width="25px" src="<?php bloginfo('template_url') ?>/images/closex.png"/></a>
 
 			 <?php if( have_rows('meet_the_chefs') ): $i = 0; ?>
 			<div class="repeater_loop1 clearfix">

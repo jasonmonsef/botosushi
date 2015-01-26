@@ -513,6 +513,7 @@ code{-webkit-text-size-adjust:160%}
 	position: relative;
   top: 50%;
   transform: translateY(-50%);
+    -webkit-transform:translateY(-50%);
 }
 /* =Menu Module
 -------------------------------------------------------------- */
@@ -527,6 +528,7 @@ code{-webkit-text-size-adjust:160%}
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
+    -webkit-transform:translateY(-50%);
 }
 #menu-box h2 {
   color: #fff;
@@ -693,6 +695,8 @@ form .stars span {
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
+    -webkit-transform:translateY(-50%);
+    
 }
 #fivestar h2 {color: #fff}
 /*
@@ -767,6 +771,7 @@ form .stars span {
   font-style: oblique;
   line-height: 20px;
   width: 70%;
+  margin-bottom: 10px
 }
 .user_profile_image > img {
   border: 3px solid #91d4ee;
@@ -1054,6 +1059,23 @@ a.menu-link {
   float: none;
   margin: 0 auto;
 }
+#access {
+  margin: 0 auto !important;
+}
+#aboutus > h2 {
+  text-align: center;
+}
+.overlay.open {
+	padding-top: 35px !important
+}
+.trigger-overlay.close {
+position: relative !important;
+margin-top:	20px !important;
+display:block;
+top:auto;
+text-align:right 
+}
+.gform_button button {-webkit-appearance: none;}
 
 }
 
