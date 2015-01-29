@@ -43,7 +43,14 @@ get_header(); ?>
 				<div class="one-third module">
 					<?php include('inc/modules/eclub/eclub.php') ?>
 				</div>
-
+				<!--
+<div class="two-third module">
+					<?php include('inc/modules/meetchef/meetchef.php') ?>
+				</div>
+-->
+				<div class="one-third module">
+					<?php include('inc/modules/private-events/private-events.php') ?>
+				</div>
 			</div><!-- #content -->
 		</div><!-- #container -->
 		
