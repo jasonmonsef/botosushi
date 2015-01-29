@@ -9,9 +9,9 @@
 			<div><img src="<?php bloginfo('template_url') ?>/images/logo.png"/></div>
 			<h2><span class="lrg-bracket">[</span><strong>Menu</strong><span class="lrg-bracket">]</span></h2>			
 			<p>Download our menu</p>
-			<a href="#" target="_blank" class="menu-link">LUNCH</a>
-			<a href="#" target="_blank" class="menu-link">DINNER</a>
-			<a href="#" target="_blank" class="menu-link">HAPPY HOUR</a>
+			<a href="<?php bloginfo('template_url') ?>/inc/modules/menu/assets/lunch-special-menu.pdf" target="_blank" class="menu-link">LUNCH</a>
+			<a href="<?php bloginfo('template_url') ?>/inc/modules/menu/assets/dinner-menu.pdf" target="_blank" class="menu-link">DINNER</a>
+			<!-- <a href="#" target="_blank" class="menu-link">HAPPY HOUR</a> -->
 		</div><!-- .overlay-inner -->
 	</div><!-- .switch -->
 </div> <!-- #menu-box -->
