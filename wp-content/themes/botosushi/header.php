@@ -92,6 +92,6 @@
 		
 	</div><!-- #header -->
 	<div class="hero-banner">
-		<img src="<?php bloginfo('template_url') ?>/images/hero-banner.jpg"/>
+		<img src="<?php bloginfo('template_url') ?>/images/_new/hero-banner.jpg"/>
 	</div>
 	<div id="main">

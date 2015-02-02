@@ -6,7 +6,7 @@
 				MORE INFO <img src="<?php bloginfo('template_url') ?>/images/right-arrow.png"/></a>
 			</div>
 			<div class="right">
-				<img src="<?php bloginfo('template_url') ?>/images/moreinfo.png"/>
+				<a class="trigger-overlay"><img src="<?php bloginfo('template_url') ?>/images/moreinfo.png"/></a>
 			</div>
 		</div>
 		

@@ -57,7 +57,46 @@ get_header(); ?>
 					
 			  });
 			  
-			  
+
+				jQuery("body").delay(300).addClass('loaded');
+			  jQuery( "input#choice_4_3" ).removeProp('checked');
+				jQuery( "input#choice_4_4" ).removeProp('checked');
+				jQuery( "input#choice_4_0" ).removeProp('checked');
+				jQuery( "input#choice_4_1" ).removeProp('checked');
+				jQuery( "input#choice_4_2" ).removeProp('checked');
+				
+
+			});
+			// The following fixes the bug that allows forms to send without being filled out. Basically the gform dropdown that is hidden needs to still have the value applied because otherwise the form will send without needing a value 
+			jQuery(document).on('touchstart click', 'div.stars input#choice_4_0.star', function () {
+				jQuery( "input#choice_1_4_0" ).prop( "checked", true );
+				jQuery( "input#choice_1_4_3" ).removeProp('checked');
+				jQuery( "input#choice_1_4_4" ).removeProp('checked');
+
+			});
+			jQuery(document).on('touchstart click', 'div.stars input#choice_4_1.star', function () {
+				jQuery( "input#choice_1_4_1" ).prop( "checked", true );
+				jQuery( "input#choice_1_4_3" ).removeProp('checked');
+				jQuery( "input#choice_1_4_4" ).removeProp('checked');
+
+			});
+			jQuery(document).on('touchstart click', 'div.stars input#choice_4_2.star', function () {
+				jQuery( "input#choice_1_4_2" ).prop( "checked", true );
+				jQuery( "input#choice_1_4_3" ).removeProp('checked');
+				jQuery( "input#choice_1_4_4" ).removeProp('checked');
+
+			});
+			jQuery(document).on('touchstart click', 'div.stars input#choice_4_3.star', function () {
+				jQuery( "input#choice_1_4_3" ).prop( "checked", true );
+				jQuery( "input#choice_1_4_0" ).removeProp('checked');
+				jQuery( "input#choice_1_4_1" ).removeProp('checked');
+				jQuery( "input#choice_1_4_2" ).removeProp('checked');
+			});
+			jQuery(document).on('touchstart click', 'div.stars input#choice_4_4.star', function () {
+				jQuery( "input#choice_4_4" ).prop( "checked", true );
+				jQuery( "input#choice_4_0" ).removeProp('checked');
+				jQuery( "input#choice_4_1" ).removeProp('checked');
+				jQuery( "input#choice_4_2" ).removeProp('checked');
 			});
 			// open menu in modal dialog
 			jQuery(document).on('touchstart click', '#menu-box .trigger-overlay, #header .trigger-overlay', function () {

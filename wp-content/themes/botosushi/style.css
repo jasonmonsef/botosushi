@@ -580,6 +580,7 @@ code{-webkit-text-size-adjust:160%}
 }
 .module #feedback {height: 500px;}
 #feedback h2,#feedback p {text-align: center;}
+#feedback h2 {margin-bottom: 50px}
 #feedback > p {
   font-size: 20px;
   padding: 0 25px;
@@ -607,7 +608,7 @@ code{-webkit-text-size-adjust:160%}
 }
 	form .stars li {display: inline-block;float: left;}	
 form .stars {
-  background: url("images/stars3-blue.png") repeat-x scroll 0 -4px rgba(0, 0, 0, 0);
+  background: url("images/stars3.png") repeat-x scroll 0 -4px rgba(0, 0, 0, 0);
   margin: 10px auto;
   width: 260px;
 }
@@ -669,7 +670,7 @@ form .stars span {
   position: relative;
   top: 0;
   left: 0;
-  height: 51px;
+  height: 49px;
   background: url("images/stars3.png") repeat-x 0 -52px;
   -webkit-transition: -webkit-width 0.5s;
   -moz-transition: -moz-width 0.5s;
@@ -741,7 +742,7 @@ form .stars span {
 -------------------------------------------------------------- */
 
 #specialdeal{	
-	background: url(images/bg-specialdeals.jpg) no-repeat;
+	background: url(images/_new/3.jpg) no-repeat;
 	background-size: cover;
 	padding: 20px;
 	text-align: center;
@@ -762,6 +763,7 @@ form .stars span {
 }
 .module #customer_reviews {height: 500px;}
 #customer_reviews > h2 {
+  margin-bottom: 40px;
   text-align: center;
 }
 .user_profile_image {float: left;width: 30%}
@@ -878,11 +880,11 @@ form .stars span {
 #meetchef .meta a {color: #a11407}
 .chef-bio {text-align: left;}
 
-/* =Private Events Module
+/* =Catering Module
 -------------------------------------------------------------- */
 
 #catering{	
-	background: url(images/bg-catering.jpg) no-repeat;
+	background: url(images/_new/2.jpg) no-repeat;
 	background-size: cover;
 	padding: 20px;
 }
@@ -903,7 +905,7 @@ form .stars span {
   float: right;
   width: 9%;
 }
-#catering .right > img {
+#catering .right a img {
   position: absolute;
   right: 9px;
   top: 52px;
@@ -968,7 +970,9 @@ a.menu-link {
   font-weight: bold;
   margin: 0 4px;
   padding: 5px 10px;
+  transition: all 0.3s ease 0s;
 }
+a.menu-link:hover {background: #A1D3E7;box-shadow: 0px 0px 3px #666;transition: all 0.3s ease 0s;}
 .overlay-title {margin-bottom: 30px;}
 
 /* =Form Specific Style
@@ -983,9 +987,10 @@ a.menu-link {
   margin: 0 auto;
   padding: 8px 10px;
   text-transform: uppercase;
+  -webkit-appearance: none
 }
 
-.ginput_container input {
+.ginput_container input,.ginput_container textarea {
   background: none repeat scroll 0 0 #fff;
   border: 1px solid #65a3b8;
   color: #65a3b8 !important;
@@ -1066,7 +1071,7 @@ a.menu-link {
   text-align: center;
 }
 .overlay.open {
-	padding-top: 35px !important
+	padding-top: 85px !important
 }
 .trigger-overlay.close {
 position: relative !important;
@@ -1076,6 +1081,10 @@ top:auto;
 text-align:right 
 }
 .gform_button button {-webkit-appearance: none;}
+.hero-banner > img {
+  display: none;
+
+}
 
 }
 
