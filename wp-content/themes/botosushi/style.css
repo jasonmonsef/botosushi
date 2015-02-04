@@ -742,7 +742,7 @@ form .stars span {
 -------------------------------------------------------------- */
 
 #specialdeal{	
-	background: url(images/_new/3.jpg) no-repeat;
+	background: url(images/bg-specialdeals.jpg) no-repeat;
 	background-size: cover;
 	padding: 20px;
 	text-align: center;
@@ -884,7 +884,7 @@ form .stars span {
 -------------------------------------------------------------- */
 
 #catering{	
-	background: url(images/_new/2.jpg) no-repeat;
+	background: url(images/bg-catering.jpg) no-repeat;
 	background-size: cover;
 	padding: 20px;
 }
