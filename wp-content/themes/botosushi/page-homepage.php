@@ -98,6 +98,7 @@ get_header(); ?>
 				jQuery( "input#choice_4_1" ).removeProp('checked');
 				jQuery( "input#choice_4_2" ).removeProp('checked');
 			});
+			
 			// open menu in modal dialog
 			jQuery(document).on('touchstart click', '#menu-box .trigger-overlay, #header .trigger-overlay', function () {
 				jQuery('#menu-box .switch').addClass('overlay').removeClass('switch').show();
@@ -105,6 +106,14 @@ get_header(); ?>
 				jQuery('#menu-box .trigger-overlay.close').show()
 				jQuery('#menu-box .gform-wrap').removeClass('expand')
 				jQuery('#menu-box .deals-cta').show()
+			});
+			// open About Us in modal dialog
+			jQuery(document).on('touchstart click', '#aboutus .trigger-overlay', function () {
+				jQuery('#aboutus .switch').addClass('overlay').removeClass('switch').show();
+				jQuery('#aboutus .overlay').toggleClass('open');
+				jQuery('#aboutus .trigger-overlay.close').show()
+				jQuery('#aboutus .gform-wrap').removeClass('expand')
+				jQuery('#aboutus .deals-cta').show()
 			});
 			// open feedback form in modal dialog
 			jQuery(document).on('touchstart click', '#feedback #ratingsForm input, #feedback .trigger-overlay.close', function () {

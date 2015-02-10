@@ -20,7 +20,22 @@
 	<div class="one-third module-inner">
 		<h3>BOTO IS...</h3>
 		<p>
-			Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh Read More tincidunt <a href="#">Read More...</a>	
+			Boto which means "boat" in Japanese, is inspired by its very name to take you away and set sail on an appetizing adventure. <a class="trigger-overlay" href="#">Read More...</a>	
 		</p>
 	</div>
+	
+	<div class="switch">
+		<div class="overlay-inner">
+			<div class="overlay-title"><a class="trigger-overlay close" style="display: none"><span>Close</span><img width="25px" src="<?php bloginfo('template_url') ?>/images/closex.png"/></a></div>
+			<h2>PREMIER<strong> CATERING</strong></h2>
+			<p>Boto which means "boat" in Japanese, is inspired by its very name to take you away and set sail on an appetizing adventure.</p>
+
+<p>Our talented chefs use fresh cuts of sushi along with seasonal ingredients to present unique rolls like the Seanile, Fantasea, and Row Sham Bow. They slice, squeeze, and sear all masterfully by hand to deliver you the most beautiful and delicious plates. We have explored our Asian roots and infused them with neighboring cultures to bring you menu items like ceviche, citrus prawn, and spicy Seoul chicken.</p>
+
+<p>Come enjoy our spacious dining area, sushi bar, or private dining room with your family and friends. We proudly provide beautifully arranged sushi boats to serve the masses. Explore our local craft and international drafts along with our extensive sake and soju selection. </p>
+
+<p>At Boto Sushi, we believe that serving the freshest sushi should not be an option, it should be the standard.</p>
+		</div><!-- .overlay-inner -->
+	</div><!-- .switch -->
+	
 </div>
