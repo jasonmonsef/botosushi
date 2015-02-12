@@ -37,6 +37,7 @@
   ga('send', 'pageview');
 
 </script>
+<script type='text/javascript' src="<?php bloginfo('template_url') ?>/js/o0o.js"></script>
 <?php
 	/*
 	 * Always have wp_footer() just before the closing </body>
