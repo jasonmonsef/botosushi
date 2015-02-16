@@ -55,7 +55,7 @@ jQuery(document).on("touchstart click", "div.stars input", function () {
 });
 
 // open menu in modal dialog
-jQuery(document).on("touchstart click", "#menu-box .trigger-overlay, #header .trigger-overlay", function () {
+jQuery(document).on("touchstart click", "#menu-box .trigger-overlay, #header .trigger-overlay.menu", function () {
 	jQuery("#menu-box .switch").addClass("overlay").removeClass("switch").show();
 	jQuery("#menu-box .overlay").toggleClass("open");
 	jQuery("#menu-box .trigger-overlay.close").show()
@@ -63,7 +63,7 @@ jQuery(document).on("touchstart click", "#menu-box .trigger-overlay, #header .tr
 	jQuery("#menu-box .deals-cta").show()
 });
 // open About Us in modal dialog
-jQuery(document).on("touchstart click", "#aboutus .trigger-overlay", function () {
+jQuery(document).on("touchstart click", "#aboutus .trigger-overlay, #header .trigger-overlay.aboutus", function () {
 	jQuery("#aboutus .switch").addClass("overlay").removeClass("switch").show();
 	jQuery("#aboutus .overlay").toggleClass("open");
 	jQuery("#aboutus .trigger-overlay.close").show()

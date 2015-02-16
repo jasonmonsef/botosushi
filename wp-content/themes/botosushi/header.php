@@ -56,7 +56,7 @@
 <div id="wrapper" class="hfeed">
 	<div id="header">
 		<ul class="menu-desktop">
-			<li><a href="#" class="trigger-overlay">MENU</a></li>
+			<li><a href="#" class="trigger-overlay menu">MENU</a></li>
 			<li>
 				<a href="">LOCATIONS</a>
 				<ul>
@@ -65,7 +65,7 @@
 			</li>
 			<li><img src="<?php bloginfo('template_url') ?>/images/logo.png"/></li>
 			<li><a href="tel:8584517800">CALL US</a></li>
-			<li><a href="">RESERVATIONS</a></li>
+			<li><a href="#" class="trigger-overlay aboutus">ABOUT US</a></li>
 		</ul>
 		
 		<ul class="menu-mobile">
@@ -75,7 +75,7 @@
 				<div class="overlay-inner ">
 					<div id="access" role="navigation" style="display: block ! important; float: none; width: 100%; text-align: center; margin-top: 40%;">
 						<ul>
-							<li><a href="#" class="trigger-overlay">MENU</a></li>
+							<li><a href="#" class="trigger-overlay menu">MENU</a></li>
 							<li>
 								<a href="">LOCATIONS</a>
 								<ul>
@@ -83,7 +83,7 @@
 								</ul>
 							</li>
 							<li><a href="tel:8584517800">CALL US</a></li>
-							<li><a href="">About us</a></li>
+							<li><a href="" class="trigger-overlay aboutus">ABOUT US</a></li>
 						</ul>
 					</div><!-- #access -->
 				</div><!-- .overlay-inner -->

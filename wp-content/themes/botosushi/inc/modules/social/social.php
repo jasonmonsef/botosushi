@@ -1,9 +1,10 @@
 <div id="catering">
-		<h2>Get<strong> Social</strong></h2>
+		
 		<div class="inner-vertically-aligned">
-			<a href="" target="_blank">Facebook</a>
-			<a href="" target="_blank">Google</a>
-			<a href="" target="_blank">Yelp</a>
+			<h2>Get<strong> Social</strong></h2>
+			<a href="https://www.facebook.com/botosushi" target="_blank">Facebook</a> | 
+			<a href="https://plus.google.com/106973377281835402668/about" target="_blank">Google</a> | 
+			<a href="http://www.yelp.com/biz/boto-sushi-san-diego-4" target="_blank">Yelp</a>
 			<!--
 <div class="right">
 				<a class="trigger-overlay"><img src="<?php bloginfo('template_url') ?>/images/moreinfo.png"/></a>

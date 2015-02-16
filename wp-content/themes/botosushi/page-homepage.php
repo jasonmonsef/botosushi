@@ -38,7 +38,7 @@ get_header(); ?>
 					<?php include('inc/modules/customer-reviews/customer-reviews.php') ?>
 				</div>
 				<div class="one-third module">
-					<?php include('inc/modules/social/catering.php') ?>
+					<?php include('inc/modules/social/social.php') ?>
 				</div>
 				<div class="one-third module">
 					<?php include('inc/modules/eclub/eclub.php') ?>

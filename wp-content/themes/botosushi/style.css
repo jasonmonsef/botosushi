@@ -754,6 +754,11 @@ form .stars span {
 #specialdeal .inner-vertically-aligned {
   padding: 0 15%;
 }
+#specialdeal a {
+  border: 1px solid;
+  color: #fff;
+  padding: 5px 10px;
+}
 
 /* =Customer Reviews Module
 -------------------------------------------------------------- */
@@ -888,6 +893,9 @@ form .stars span {
 	background: url(images/bg-catering.jpg) no-repeat;
 	background-size: cover;
 	padding: 20px;
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
 }
 .module #catering {height: 250px;}
 #catering h2 {color: #fff}
@@ -911,8 +919,12 @@ form .stars span {
   right: 9px;
   top: 52px;
 }
-#catering a {color: #fff}
-
+#catering a {
+  background: none repeat scroll 0 0 #9cd1e6;
+  border-radius: 13px;
+  color: #fff;
+  padding: 5px 10px;
+}
 /* =Overlay Module
 -------------------------------------------------------------- */
 .switch {display: none;}
