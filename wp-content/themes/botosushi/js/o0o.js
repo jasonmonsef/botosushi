@@ -85,6 +85,7 @@ jQuery(document).on("touchstart click", "#customer_reviews .trigger-overlay, #cu
 	jQuery("#customer_reviews .trigger-overlay.close").show()
 	jQuery("#customer_reviews .gform-wrap").removeClass("expand")
 	jQuery("#customer_reviews .deals-cta").show()
+	jQuery( "#ratingsForm .stars" ).show();
 });
 // open E-Club form in modal dialog
 jQuery(document).on("touchstart click", "#eclub .trigger-overlay", function () {

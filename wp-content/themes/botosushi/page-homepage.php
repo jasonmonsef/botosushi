@@ -38,7 +38,7 @@ get_header(); ?>
 					<?php include('inc/modules/customer-reviews/customer-reviews.php') ?>
 				</div>
 				<div class="one-third module">
-					<?php include('inc/modules/catering/catering.php') ?>
+					<?php include('inc/modules/social/catering.php') ?>
 				</div>
 				<div class="one-third module">
 					<?php include('inc/modules/eclub/eclub.php') ?>
@@ -46,7 +46,6 @@ get_header(); ?>
 
 			</div><!-- #content -->
 		</div><!-- #container -->
-		
-				
+					
 <?php// get_sidebar(); ?>
 <?php get_footer(); ?>

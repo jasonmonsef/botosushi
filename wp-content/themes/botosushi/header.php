@@ -83,7 +83,7 @@
 								</ul>
 							</li>
 							<li><a href="tel:8584517800">CALL US</a></li>
-							<li><a href="">RESERVATIONS</a></li>
+							<li><a href="">About us</a></li>
 						</ul>
 					</div><!-- #access -->
 				</div><!-- .overlay-inner -->
