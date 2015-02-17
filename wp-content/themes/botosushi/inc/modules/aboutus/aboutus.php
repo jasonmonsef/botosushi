@@ -28,7 +28,7 @@
 	<div class="switch">
 		<div class="overlay-inner">
 			<div class="overlay-title"><a class="trigger-overlay close" style="display: none"><span>Close</span><img width="25px" src="<?php bloginfo('template_url') ?>/images/closex.png"/></a></div>
-			<h2>PREMIER<strong> CATERING</strong></h2>
+			<h2>About<strong> Boto</strong></h2>
 			<p>Boto which means "boat" in Japanese, is inspired by its very name to take you away and set sail on an appetizing adventure.</p>
 
 <p>Our talented chefs use fresh cuts of sushi along with seasonal ingredients to present unique rolls like the Seanile, Fantasea, and Row Sham Bow. They slice, squeeze, and sear all masterfully by hand to deliver you the most beautiful and delicious plates. We have explored our Asian roots and infused them with neighboring cultures to bring you menu items like ceviche, citrus prawn, and spicy Seoul chicken.</p>
