@@ -728,7 +728,18 @@ form .stars span {
 	color: #fff
 }
 .module #happyhour {height: 250px;}
-#happyhour h2 {color: #fff}
+#happyhour h2 {
+  color: #fff;
+  margin-bottom: 0;
+}
+#happyhour h3 {
+  background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+  border-radius: 10px;
+  color: #fff;
+  display: inline-block;
+  padding: 0 10px;
+  margin-bottom: 0px;
+}
 #happyhour .inner-vertically-aligned {
 /*   padding: 0 15%; */
 }
