@@ -8,32 +8,46 @@
 		How likely is it that you would recommend Boto Sushi to a friend?
 	</p>
 
-	<form id="ratingsForm">
+	<div id="ratingsForm">
 		<div class="stars">
-			<ul id="input_1_4" class="gfield_radio">
-				<input type="radio" onclick="gf_apply_rules(1,[0,8,2,6,7,5]);" tabindex="1" id="choice_4_0" value="gsurvey4b0b3eb21" name="input_4" class="star-1 star">
-				<label id="label_4_0" for="choice_4_0" class="star-1"></label>
-				<input type="radio" onclick="gf_apply_rules(1,[0,8,2,6,7,5]);" tabindex="2" id="choice_4_1" value="gsurvey44ab71275" name="input_4" class="star-2 star">
-				<label id="label_4_1" for="choice_4_1" class="star-2"></label>
-				<input type="radio" onclick="gf_apply_rules(1,[0,8,2,6,7,5]);" tabindex="3" id="choice_4_2" value="gsurvey481ab3fc6" name="input_4" class="star-3 star">
-				<label id="label_4_2" for="choice_4_2" class="star-3"></label>
-				<input type="radio" onclick="gf_apply_rules(1,[0,8,2,6,7,5]);" tabindex="4" id="choice_4_3" value="gsurvey429e78a84" name="input_4" class="star-4 star">
-				<label id="label_4_3" for="choice_4_3" class="star-4"></label>
-				<input type="radio" onclick="gf_apply_rules(1,[0,8,2,6,7,5]);" tabindex="5" id="choice_4_4" value="gsurvey4b43b65f0" name="input_4" class="star-5 star">
-				<label id="label_4_4" for="choice_4_4" class="star-5"></label>
-				<span></span>
-			</ul>
+			<input type="radio"  id="choice_1star" value="1star" class="star-1 star">
+			<label id="label_1star" class="star-1"></label>
+			
+			<input type="radio"  id="choice_2star" value="2star" class="star-2 star">
+			<label id="label_2star" class="star-2"></label>
+			
+			<input type="radio"  id="choice_3star" value="3star" class="star-3 star">
+			<label id="label_3star" class="star-3"></label>
+			
+			<input type="radio"  id="choice_4star" value="4star" class="star-4 star">
+			<label id="label_4star" class="star-4"></label>
+			
+			<input type="radio"  id="choice_5star" value="5star" class="star-5 star">
+			<label id="label_5star" class="star-5"></label>
+			<span></span>
 		</div> <!-- .stars -->
-	</form> <!-- #ratingsForm -->
+	</div> <!-- #ratingsForm -->
+	
 	
 	
 	<div class="switch">
 		<div class="overlay-inner">
+			
 			<a class="trigger-overlay close menu-overlay" style="display: none"><span>Close</span><img width="25px" src="<?php bloginfo('template_url') ?>/images/closex.png"/></a>
 			<h2><span class="lrg-bracket">[</span>GIVE US <strong>FEEDBACK</strong><span class="lrg-bracket">]</span></h2>
-			<div  class="gform-wrap" style="height:0px;overflow: hidden;transition: all 0.3s ease 0s;">
+			
+			<div  class="gform-wrap" style="display: none">
 				<?php echo do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]'); ?>
 			</div><!-- .gform-wrap -->
+			
+			<div class="review_links" style="display: none;">
+			<div class="review-sites">
+				<a href="https://www.facebook.com/botosushi/reviews" target="_blank"><img src="http://botosushi.com/wp-content/themes/botosushi/images/facebook.png"/></a>	
+				<a href="https://plus.google.com/116023339522191445801/about" target="_blank"><img src="http://botosushi.com/wp-content/themes/botosushi/images/google-plus.png"/></a>	
+				<a href="http://www.yelp.com/biz/boto-sushi-san-diego-4" target="_blank"><img src="http://botosushi.com/wp-content/themes/botosushi/images/yelp.png"/></a>
+			</div><!-- .review-sites -->
+		</div><!-- .review_links -->
+		
 		</div><!-- .overlay-inner -->
 	</div><!-- .switch -->
 	
