@@ -63,7 +63,7 @@ jQuery( document ).ready(function() {
 
 //hide the stars after click
 jQuery(document).on("click", "#feedback .stars label", function () {
-	jQuery( "#ratingsForm .stars" ).fadeOut();
+	jQuery( "#feedback .stars" ).fadeOut();
 	jQuery( "#feedback" ).append("<p>Thank you!</p>");
 });
 jQuery(document).on("click", ".trigger-overlay.close", function () {
