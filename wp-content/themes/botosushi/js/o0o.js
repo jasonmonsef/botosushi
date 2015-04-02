@@ -31,31 +31,31 @@ jQuery( document ).ready(function() {
 */
 
 	  	jQuery("label.star-1").click(function() {
-  		  jQuery("#ratingsForm").fadeOut(function() {
+  		  jQuery(".review_links").hide(function() {
 					jQuery(".gform-wrap").fadeIn();
 				});
   		});
 			
 	  	jQuery("label.star-2").click(function() {
-  		  jQuery("#ratingsForm").fadeOut(function() {
+  		  jQuery(".review_links").hide(function() {
 					jQuery(".gform-wrap").fadeIn();
 				});
  			});
 			
 	  	jQuery("label.star-3").click(function() {
-  		  jQuery("#ratingsForm").fadeOut(function() {
+  		  jQuery(".review_links").hide(function() {
 					jQuery(".gform-wrap").fadeIn();
 				});
   		});
   		
 	  	jQuery("label.star-4").click(function() {
-  		  jQuery("#ratingsForm").fadeOut(function() {
+  		  jQuery(".gform-wrap").hide(function() {
 					jQuery('.review_links').fadeIn();
 				});
   		});
 			
 	  	jQuery("label.star-5").click(function() {
-  		  jQuery("#ratingsForm").fadeOut(function() {
+  		  jQuery(".gform-wrap").hide(function() {
 					jQuery('.review_links').fadeIn();
 				});
   		});
@@ -66,6 +66,10 @@ jQuery(document).on("click", "#feedback .stars label", function () {
 	jQuery( "#ratingsForm .stars" ).fadeOut();
 	jQuery( "#feedback" ).append("<p>Thank you!</p>");
 });
+jQuery(document).on("click", ".trigger-overlay.close", function () {
+	jQuery('.review_links').fadeIn();
+	jQuery('.gform-wrap').fadeIn();
+});
 
 
 // open menu in modal dialog
@@ -73,49 +77,47 @@ jQuery(document).on("click", "#menu-box .trigger-overlay, #header .trigger-overl
 	jQuery("#menu-box .switch").addClass("overlay").removeClass("switch").show();
 	jQuery("#menu-box .overlay").toggleClass("open");
 	jQuery("#menu-box .trigger-overlay.close").show()
-	jQuery("#menu-box .gform-wrap").removeClass("expand")
-	jQuery("#menu-box .deals-cta").show()
 });
 // open About Us in modal dialog
 jQuery(document).on("click", "#aboutus .trigger-overlay, #header .trigger-overlay.aboutus", function () {
 	jQuery("#aboutus .switch").addClass("overlay").removeClass("switch").show();
 	jQuery("#aboutus .overlay").toggleClass("open");
 	jQuery("#aboutus .trigger-overlay.close").show()
-	jQuery("#aboutus .gform-wrap").removeClass("expand")
-	jQuery("#aboutus .deals-cta").show()
 });
 // open feedback form in modal dialog
 jQuery(document).on("click", "#feedback #ratingsForm .stars label, #feedback .trigger-overlay.close", function () {
 	jQuery("#feedback .switch").addClass("overlay").removeClass("switch").show();
 	jQuery("#feedback .overlay").toggleClass("open");
 	jQuery("#feedback .trigger-overlay.close").show()
-	jQuery("#feedback .gform-wrap").removeClass("expand")
-	jQuery("#feedback .deals-cta").show()
+	
 });
 // open Custom Reviews Form in modal dialog
-jQuery(document).on("click", "#customer_reviews .trigger-overlay, #customer_reviews label", function () {
+jQuery(document).on("click", "#customer_reviews .trigger-overlay", function () {
+	jQuery("#customer_reviews .switch").addClass("overlay").removeClass("switch").show();
+	jQuery("#customer_reviews .overlay").toggleClass("open");
+	jQuery("#customer_reviews .trigger-overlay.close").show();
+
+});
+jQuery(document).on("click", "#customer_reviews label", function () {
 	jQuery("#feedback .switch").addClass("overlay").removeClass("switch").show();
 	jQuery("#feedback .overlay").toggleClass("open");
-	jQuery("#feedback .trigger-overlay.close").show()
-	jQuery("#feedback .gform-wrap").removeClass("expand")
-	jQuery("#feedback .deals-cta").show()
-	jQuery( ".review_links" ).show();
+	jQuery("#feedback .trigger-overlay.close").show();
+	
+	jQuery("#customer_reviews .overlay").toggleClass("open");
+	jQuery('.review_links').hide();
+
 });
 // open E-Club form in modal dialog
 jQuery(document).on("click", "#eclub .trigger-overlay", function () {
 	jQuery("#eclub .switch").addClass("overlay").removeClass("switch").show();
 	jQuery("#eclub .overlay").toggleClass("open");
 	jQuery("#eclub .trigger-overlay.close").show()
-	jQuery("#eclub .gform-wrap").removeClass("expand")
-	jQuery("#eclub .deals-cta").show()
 });
 // open Meet The chefs form in modal dialog
 jQuery(document).on("click", "#meetchef .trigger-overlay", function () {
 	jQuery("#meetchef .switch").addClass("overlay").removeClass("switch").show();
 	jQuery("#meetchef .overlay").toggleClass("open");
 	jQuery("#meetchef .trigger-overlay.close").show()
-	jQuery("#meetchef .gform-wrap").removeClass("expand")
-	jQuery("#meetchef .deals-cta").show()
 });
 // show specific chef bio
 jQuery(document).on("click", "#meetchef .trigger-overlay.1", function () {
@@ -139,16 +141,12 @@ jQuery(document).on("click", "#catering .trigger-overlay", function () {
 	jQuery("#catering .switch").addClass("overlay").removeClass("switch").show();
 	jQuery("#catering .overlay").toggleClass("open");
 	jQuery("#catering .trigger-overlay.close").show()
-	jQuery("#catering .gform-wrap").removeClass("expand")
-	jQuery("#catering .deals-cta").show()
 });
 // open FiveStar form in modal dialog
 jQuery(document).on("click", "#fivestar .trigger-overlay", function () {
 	jQuery("#fivestar .switch").addClass("overlay").removeClass("switch").show();
 	jQuery("#fivestar .overlay").toggleClass("open");
 	jQuery("#fivestar .trigger-overlay.close").show()
-	jQuery("#fivestar .gform-wrap").removeClass("expand")
-	jQuery("#fivestar .deals-cta").show()
 });
 
 
