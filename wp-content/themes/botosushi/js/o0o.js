@@ -34,30 +34,35 @@ jQuery( document ).ready(function() {
   		  jQuery(".review_links").hide(function() {
 					jQuery(".gform-wrap").fadeIn();
 				});
+				ga('send', 'event', 'star', 'click', '1star');
   		});
 			
 	  	jQuery("label.star-2").click(function() {
   		  jQuery(".review_links").hide(function() {
 					jQuery(".gform-wrap").fadeIn();
 				});
+				ga('send', 'event', 'star', 'click', '2star');
  			});
 			
 	  	jQuery("label.star-3").click(function() {
   		  jQuery(".review_links").hide(function() {
 					jQuery(".gform-wrap").fadeIn();
 				});
+				ga('send', 'event', 'star', 'click', '3star');
   		});
   		
 	  	jQuery("label.star-4").click(function() {
   		  jQuery(".gform-wrap").hide(function() {
 					jQuery('.review_links').fadeIn();
 				});
+				ga('send', 'event', 'star', 'click', '4star');
   		});
 			
 	  	jQuery("label.star-5").click(function() {
   		  jQuery(".gform-wrap").hide(function() {
 					jQuery('.review_links').fadeIn();
 				});
+				ga('send', 'event', 'star', 'click', '5star');
   		});
   	
 
