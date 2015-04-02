@@ -67,8 +67,8 @@ jQuery(document).on("click", "#feedback .stars label", function () {
 	jQuery( "#feedback" ).append("<p>Thank you!</p>");
 });
 jQuery(document).on("click", ".trigger-overlay.close", function () {
-	jQuery('.review_links').fadeIn();
-	jQuery('.gform-wrap').fadeIn();
+	jQuery('.review_links').hide();
+	jQuery('.gform-wrap').hide();
 });
 
 
